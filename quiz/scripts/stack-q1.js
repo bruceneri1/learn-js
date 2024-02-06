@@ -5,6 +5,7 @@ class PStack {
     this._persons = [];
   }
 
+
   showId() {
     return this.#id;
   }
@@ -16,6 +17,13 @@ class PStackImpl extends PStack {
     super();
   }
 
+  get persons() {
+    return this._persons;
+  }
+
+  set persons(persons) {
+    this._persons = persons;
+  }
   push(p) {
     return this._persons.push(p)
   }
